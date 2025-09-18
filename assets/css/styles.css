@@ -15,12 +15,21 @@ body {
     color: var(--text);
 }
 
-.navbar,.bg-light {
+.navbar,
+.bg-light {
     background: var(--card) !important;
 }
 
 .card {
     background: var(--card);
+}
+
+/* ✅ Make card text follow theme */
+.card-title,
+.card-text,
+.card p,
+.card h5 {
+    color: var(--text) !important;
 }
 
 .product-img {
@@ -35,22 +44,38 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+/* ✅ Make buttons follow theme */
+.btn,
+.btn-ghost {
+    color: var(--text) !important;
+    border-color: var(--text) !important;
+}
+
+.btn:hover,
+.btn-ghost:hover {
+    background: var(--text) !important;
+    color: var(--bg) !important;
+}
 
 .hero-section {
     min-height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://png.pngtree.com/background/20240507/original/pngtree-digital-retailing-illustration-laptop-keyboard-with-shopping-basket-and-e-commerce-picture-image_8835213.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://png.pngtree.com/background/20240507/original/pngtree-digital-retailing-illustration-laptop-keyboard-with-shopping-basket-and-e-commerce-picture-image_8835213.jpg')
+        center/cover no-repeat;
 }
+
 .hero-section h1 {
     font-size: 3rem;
 }
+
 .hero-section p {
     font-size: 1.25rem;
     color: #f8f9fa;
 }
 
-
 /* Sticky footer fix */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -70,7 +95,7 @@ footer {
     border: none;
     flex: 1;
     min-width: 200px;
-    }
+}
 
 .newsletter-form input:focus {
     outline: none;
@@ -85,4 +110,3 @@ footer {
 .newsletter-form button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
-
